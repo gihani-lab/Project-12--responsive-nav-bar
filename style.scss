@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+}
+.navbar {
+  font-size: 14px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0c1644;
+
+  &__links {
+    display: flex;
+    gap: 50px;
+    a {
+      font-size: 20px;
+      line-height: 50px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    a:hover {
+      background-color: #c1660b;
+      color: black;
+    }
+  }
+}
