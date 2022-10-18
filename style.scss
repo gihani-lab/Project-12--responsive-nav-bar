@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   width: 100%;
   overflow: hidden;
-  background-color: #0c1644;
+  background-color: #701062;
 
   &__links {
     display: flex;
@@ -20,5 +20,17 @@ body {
       background-color: #c1660b;
       color: black;
     }
+    &--active {
+      background-color: #189014;
+      color: rgb(18, 125, 231);
+    }
+    &--icon {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
   }
 }
