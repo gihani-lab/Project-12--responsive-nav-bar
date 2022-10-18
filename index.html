@@ -12,19 +12,28 @@
 
 <body>
     <div class="navbar">
-        <div class="navbar__links">
+        <div class="navbar__links" id="nav-home">
             <a href="#home" class="navbar__links--active">Home</a>
             <a href="/html/">HTML</a>
             <a href="/css/">CSS</a>
             <a href="/js/">JavaScript</a>
             <a href="/python/">Python</a>
-            <a class="navbar__links--icon" onclick="programlanagugemenu()">
+            <a class="navbar__links--icon" onclick="programmingLanguages()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </div>
 
-
+    <script>
+        function programmingLanguages() {
+            let programming = document.getElementById("nav-home");
+            if (programming.className === "navbar__links") {
+                programming.className += " responsive";
+            } else {
+                programming.className = "navbar__links";
+            }
+        }
+    </script>
 </body>
 
 </html>
